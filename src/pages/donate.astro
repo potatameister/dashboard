@@ -7,12 +7,12 @@ import Layout from "../layouts/Layout.astro";
 		<div class="Subhead mb-4">
 			<div class="Subhead-heading h1">Support My Work</div>
 			<div class="Subhead-description">
-				If you find my projects helpful, consider supporting my open-source journey.
+				Choose a method that works best for you. I prioritize privacy and open-source values.
 			</div>
 		</div>
 
 		<div class="row">
-			<!-- Primary Donation Method -->
+			<!-- GitHub Sponsors -->
 			<div class="col-12 col-md-6 mb-4">
 				<div class="Box Box--condensed height-full d-flex flex-column">
 					<div class="Box-header d-flex flex-items-center">
@@ -22,10 +22,10 @@ import Layout from "../layouts/Layout.astro";
 						<h3 class="Box-title">GitHub Sponsors</h3>
 					</div>
 					<div class="Box-body flex-auto">
-						<p class="color-fg-muted mb-3">The best way to support my ongoing open-source projects with monthly tiers or one-time payments.</p>
+						<p class="color-fg-muted mb-3">Best for long-term support. GitHub takes 0% fees for sponsors.</p>
 						<div class="d-flex flex-items-center">
 							<span class="Label Label--secondary mr-2">Monthly</span>
-							<span class="Label Label--info">One-time</span>
+							<span class="Label Label--info">Zero Fees</span>
 						</div>
 					</div>
 					<div class="Box-footer border-top-0">
@@ -36,62 +36,69 @@ import Layout from "../layouts/Layout.astro";
 				</div>
 			</div>
 
-			<!-- Alternative Suggestion: Buy Me A Coffee -->
+			<!-- Ko-fi -->
 			<div class="col-12 col-md-6 mb-4">
-				<div class="Box Box--condensed height-full d-flex flex-column bg-subtle">
+				<div class="Box Box--condensed height-full d-flex flex-column">
 					<div class="Box-header d-flex flex-items-center">
 						<svg height="16" viewBox="0 0 16 16" version="1.1" width="16" class="mr-2" style="fill: currentColor;">
 							<path d="M1 2.75C1 1.784 1.784 1 2.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 11.25 10H2.75A1.75 1.75 0 0 1 1 8.25Zm1.5 0v5.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm12 3.5h.75a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-.75.75h-.75V6.25Z"></path>
 						</svg>
-						<h3 class="Box-title">Buy Me a Coffee</h3>
+						<h3 class="Box-title">Ko-fi</h3>
 					</div>
 					<div class="Box-body flex-auto">
-						<p class="color-fg-muted mb-3">A simple way to send a small tip. Perfect for one-time contributions without a recurring commitment.</p>
-						<p class="f6 color-fg-subtle italic">Suggestion: Setting this up gives people a quick way to say thanks!</p>
+						<p class="color-fg-muted mb-3">Perfect for one-time tips. Supports PayPal and Credit Cards.</p>
+						<p class="f6 color-fg-subtle">Note: Use a PayPal Business account to keep your legal name private.</p>
 					</div>
 					<div class="Box-footer border-top-0">
-						<button class="btn btn-outline btn-block text-center" disabled>
-							Coming Soon
-						</button>
+						<a href="https://ko-fi.com/potatameister" class="btn btn-outline btn-block text-center" target="_blank" rel="noopener noreferrer">
+							Support on Ko-fi
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<!-- Anonymous / Crypto Option -->
+		<div class="Box mt-4">
+			<div class="Box-header border-bottom-0">
+				<h3 class="Box-title">Private & Anonymous Support</h3>
+			</div>
+			<div class="Box-body border-top">
+				<div class="d-flex flex-column flex-md-row flex-items-center">
+					<div class="mr-md-4 mb-3 mb-md-0">
+						<div class="circle bg-subtle d-flex flex-items-center flex-justify-center" style="width: 48px; height: 48px;">
+							<svg height="24" viewBox="0 0 24 24" width="24" class="color-fg-accent" style="fill: currentColor;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+						</div>
+					</div>
+					<div class="flex-auto text-center text-md-left">
+						<div class="f4 font-weight-bold">Monero (XMR)</div>
+						<div class="color-fg-muted mb-2">The most private way to support open source. 100% anonymous.</div>
+						<code>4YOUR_XMR_ADDRESS_HERE_REPLACE_THIS_WITH_YOUR_ACTUAL_ADDRESS</code>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Zero-Cost Support -->
 		<div class="Box mt-4">
 			<div class="Box-header">
-				<h3 class="Box-title">Other Ways to Support</h3>
+				<h3 class="Box-title">Other Ways to Help (Free!)</h3>
 			</div>
 			<div class="Box-body">
-				<ul class="list-style-none">
-					<li class="d-flex flex-items-start mb-3">
-						<div class="color-fg-accent mr-3">
-							<svg height="20" viewBox="0 0 24 24" width="20" style="fill: currentColor;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2v-2zm0-10h2v8h-2V6z"/></svg>
-						</div>
-						<div>
-							<div class="f4 font-weight-bold">Spread the Word</div>
-							<div class="color-fg-muted">Sharing my work on social media or with your colleagues is a huge help and costs nothing!</div>
-						</div>
-					</li>
-					<li class="d-flex flex-items-start mb-3">
-						<div class="color-fg-success mr-3">
-							<svg height="20" viewBox="0 0 24 24" width="20" style="fill: currentColor;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-						</div>
-						<div>
-							<div class="f4 font-weight-bold">Contribute Code</div>
-							<div class="color-fg-muted">Opening issues or submitting Pull Requests on my repositories is one of the best ways to support development.</div>
-						</div>
-					</li>
-					<li class="d-flex flex-items-start">
-						<div class="color-fg-done mr-3">
-							<svg height="20" viewBox="0 0 24 24" width="20" style="fill: currentColor;"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						</div>
-						<div>
-							<div class="f4 font-weight-bold">Star my Projects</div>
-							<div class="color-fg-muted">Stars help more people discover my work. Head over to GitHub and drop a star on your favorite repo!</div>
-						</div>
-					</li>
-				</ul>
+				<div class="row">
+					<div class="col-12 col-md-4 mb-3 mb-md-0">
+						<div class="f5 font-weight-bold mb-1">Spread the Word</div>
+						<div class="f6 color-fg-muted">Share my projects on social media or with friends.</div>
+					</div>
+					<div class="col-12 col-md-4 mb-3 mb-md-0">
+						<div class="f5 font-weight-bold mb-1">Contribute</div>
+						<div class="f6 color-fg-muted">Submit bug reports or PRs on my repositories.</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="f5 font-weight-bold mb-1">Star Projects</div>
+						<div class="f6 color-fg-muted">A simple star on GitHub goes a long way.</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
